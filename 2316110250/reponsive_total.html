@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/thumbs.css">
+    <title>반응형 웹 연습</title>
+    <script src="https://kit.fontawesome.com/0061579604.js" crossorigin="anonymous"></script>
+    <script>
+         function toggleNav() {
+      var nav = document.getElementById("nav");
+      if (nav.style.display === "block") {
+        nav.style.display = "none";
+      } else {
+        nav.style.display = "block";
+      }
+    }
+    </script>
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="header_wrapper">
+          <h1 class="header_start">
+            <button class="header_hamburger" onclick="toggleNav()">&#9776;</button>
+            <span class="header_title"><i class="fab fa-youtube"></i>코딩강의</span>
+          </h1>
+            <div class="header_center">
+                <form class="header_form" onsubmit="return false;">
+                    <input class="header_input_text" placeholder="보고싶은 동영상">
+                    <button class="header_input_button">검색</button> 
+                    <i class="fa-solid fa-microphone"></i>
+                    
+                </form>
+                
+            </div>
+            <div class="header_end">
+                <button class="header_search">&#128269;</button>
+                <div class="header_profile"></div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav" id="nav">
+        <ul class="nav_wrapper">
+          <li>
+            <button class="nav_icon"><i class="fa-solid fa-circle-play"></i></button>
+            <button class="nav_menu">Shorts</button>
+          </li>
+          <li>
+            <button class="nav_icon"><i class="fa-regular fa-thumbs-up"></i></button>
+            <button class="nav_menu">구독</button>
+          </li>
+          <li>
+            <button class="nav_icon"><i class="fa-brands fa-square-youtube"></i></button>
+            <button class="nav_menu">보관함</button>
+          </li>
+          <li>
+            <a href="https://github.com/chogigang" target="_blank">
+              <button class="nav_icon"><i class="fa-brands fa-github"></i></button>
+              <button class="nav_menu">깃허브</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    <section class="thumbs">
+        <div class="thumbs_wrapper">
+            <div class="thumbs_item">
+                <img src="img/mobile.jpg" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">앱 디자인 설계</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 1012 &#183; 1개월 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/web.png" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">코딩의 기초</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 54710 &#183; 6개월 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/sns.jpg" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">SNS의 기초</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 3100 &#183; 2개월 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/sns2.png" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">SNS 응용</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 5248 &#183; 1개월 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/woman.jpg" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">예쁜 사진 찍기</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 24530 &#183; 1개월 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/AI.png" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">인공지능과 디지털전환</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 100 &#183; 1시간 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/robot.png" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">로봇기술</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 100 &#183; 1시간 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/javascript.png" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">자바스크립트</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 100 &#183; 1시간 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/python.jpg" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">파이썬 시작하기</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 10237 &#183; 1년 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/website.png" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">웹사이트만들기</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 23541 &#183; 6개월 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/bigdata.png" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">빅데이터로 알수있는 것</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 1054 &#183; 10시간 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/iot.jpg" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">사물인터넷</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 105 &#183; 1시간 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/job.jpg" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">취미와 직업</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 15105 &#183; 1년 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/office.jpg" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">반응형 웹</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 105 &#183; 1시간 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/tree.jpg" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">휴가 그리고 휴식</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 2105 &#183; 1개월 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="thumbs_item">
+                <img src="img/mario.jpg" class="thumbs_thumbnail">
+                <div class="thumbs_info">
+                    <div class="thumbs_profile"></div>
+                    <div class="thumbs_text">
+                        <h3 class="thumbs_text_title">마리오 만들기</h3>
+                        <p class="thumbs_text_owner">게시자</p>
+                        <p class="thumbs_text_anal">조회수 265 &#183; 1시간 전</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<!-- 
+    
+    유튜브와 비슷하게 구현할려고 생각을 했습니다.
+
+    유튜브에선  검색창이 둥글고 그안에 검색 버튼도 둥글기 때문에 똑같이 구현했으며
+    옆에 마이크 음성 인식 기능이 있습니다 하지만 그냥 아이콘만 구현 했습니다.
+    햄버거를 커서를 올렸렸을때 회색 원이 생겨서 구현을 했고 햄버거를 눌렀을때 매뉴가 나오게 했습니다
+    메뉴 이모티콘은 폰트어썸에서 들거 왔으며 유튜브는 색깔을 빨강으로 변경 했습니다.
+    오른쪽 아이콘은 다른 프로필로 수정을 했으며 저의 구글 계정 프로필 이미지 입니다.
+    일반 영상도 각진 영상보단 조금 둥근 모양으로 모서리가 둥글어서 구현을 했으며 커서를 뒀을때 원본으로 돌아가게 구현했습니다
+    깃허브는 저의 개인 깃허브 링크를 걸었습니다.
+    그러고 이제 배운것들을 몇개 더 넣을겸 커서를 올렸을때 이미지가 살짝 올라가게  transform: translateY(-5px); 사용했습니다
+
+
+ -->
